@@ -13,6 +13,10 @@ The program creates a zero matrix of height*width, then randomly generates centr
 * Colours can be edited in coloursettings.py
 * Includes a crude terminal interface to create maps, smoothen them, or colour them.
 * Can be run directly or imported as a module.
+<p float="left">
+  <img src="images/terminal.png" width="48%" />
+</p>
+CLI interface
 
 ## Samples
 
@@ -26,10 +30,18 @@ raw heightmap and coloured heightmap
 <p float="left">
   <img src="images/5sc_5.png" width="31%" />
   <img src="images/5sc_15.png" width="31%" />
-  <img src="images/5sc_50.png.png" width="31%" />
+  <img src="images/5sc_50.png" width="31%" />
 </p>
 heightmaps smoothened with values 5, 15, 50 respectively
+
 the smoothening happens by averaging the values of neighbourhood values
+
+## Dependencies
+
+This project requires the following python libraries:
+* numpy
+* PIL
+* tqdm
 
 ## How to use
 
