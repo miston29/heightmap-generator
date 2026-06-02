@@ -31,11 +31,15 @@ def main():
             except ValueError:
                 print("one or more values are not integer")
                 continue
-            
-            if savee == "" or savee is None:
+                
+            if (savee == "" or savee is None) and (zmooth == "" or zmooth is None):
                 Wave(height=height, width=width, cap=cap).create()
-            else:
+            elif savee == "" or savee is None:
+                Wave(height=height, width=width, cap=cap, smoothval=zmooth).create()
+            elif zmooth == "" or zmooth is None:
                 Wave(height=height, width=width, cap=cap, savename=savee).create()
+            else:
+                Wave(height=height, width=width, cap=cap, savename=savee, smoothval=zmooth).create()
 
         elif option == 2:
             location = input("path to heightmap > ").strip()
