@@ -2,7 +2,7 @@
 
 A python heightmap generator based on manhattan distance. 
 
-The program creates a zero matrix of height*width, then randomly generates centres which have an initial height (cap). The values spread out from these centres until they reach 0. Overlapping values are added together, creating the terrain.
+The program creates a zero matrix of height*width, then randomly generates centres which have an initial height (cap). The values spread out from these centres until they reach 0. Overlapping values are added together, creating the terrain or you can just make a fancy background
 
 <p float="left">
   <img src="images/single.png" width="45%" />
@@ -49,5 +49,10 @@ To start the terminal interface:
 ```bash
 python3 main.py
 ```
-
 Or Driver.py can directly be imported into yout code
+
+to just create background, get the `background_maker.py`, edit `SAVEPATH` at line 65 as per choice.
+```bash
+python3 background_maker.py
+```
+you can hook this script to a keybind like Alt+W or make it run at startup
